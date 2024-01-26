@@ -10,9 +10,10 @@ function buscarContatoNome($conexao,$nomeContato){
     return $result;
 }
 
-function buscarContatoID($conexao,$idContato){
-    $query = "Select * contatotb where idContato = '{$idContato}'";
+function buscarContatoID($conexao, $idContato){
+    $query = "Select * from contatotb where idContato = '{$idContato}'";
     $result = mysqli_query($conexao,$query);
+    $result = mysqli_fetch_array($result);
     return $result;
 }
 

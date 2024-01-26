@@ -47,7 +47,7 @@ include_once("../model/bancoContato.php");
       <td> <?php echo($contatos["nomeContato"])?> </td>
       <td> <?=$contatos["foneContato"]?> </td>
       <td>
-     <a class="btn btn-primary" href="xx.php?codigo=<?=$contatos["idContato"]?>">
+     <a class="btn btn-primary" href="alterarFormulario.php?idContato=<?=$contatos["idContato"]?>">
       Alterar
       </a>
       </td>
